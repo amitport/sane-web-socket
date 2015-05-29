@@ -28,7 +28,7 @@ var SaneWebSocketClient = require('sane-web-socket/client');
 Or, create standalone browser bundle:
 
 ```sh
-# creates sane-web-socket-client.js
+# creates a sane-web-socket-client.js
 $ npm run browser
 ```
 
