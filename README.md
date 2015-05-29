@@ -1,6 +1,6 @@
 #  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
-> The best module ever.
+> Provides sane defaults and API around socket.io core.
 
 
 ## Install
