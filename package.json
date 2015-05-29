@@ -1,6 +1,6 @@
 {
   "name": "sane-web-socket",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Provides sane defaults and API around socket.io core",
   "homepage": "github.com/amitport/sane-web-socket",
   "author": {
