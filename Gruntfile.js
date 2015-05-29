@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         src: ['*.js']
       },
       test: {
-        src: ['test/**/*.js']
+        src: ['test/*.js']
       }
     },
     mochacli: {

@@ -1,7 +1,7 @@
 {
   "name": "sane-web-socket",
   "version": "0.0.0",
-  "description": "",
+  "description": "Provides sane defaults and API around socket.io core",
   "homepage": "github.com/amitport/sane-web-socket",
   "author": {
     "name": "Amit Portnoy",
@@ -11,19 +11,24 @@
   "repository": "amitport/sane-web-socket",
   "license": "AGPL",
   "files": [
-    "index.js"
+    "server.js",
+    "client.js"
   ],
   "keywords": [
     "sane-web-socket",
     "websocket",
     "realtime"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "bluebird": "^2.9.26",
+    "debug": "^2.2.0",
+    "socket.io": "^1.3.5",
+    "socket.io-client": "^1.3.5"
+  },
   "devDependencies": {
     "browserify": "^9.0.3",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-jshint": "^0.11.0",
-    "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-cli": "^1.12.0",
     "jshint-stylish": "^1.0.1",
@@ -32,6 +37,6 @@
   },
   "scripts": {
     "test": "grunt",
-    "browser": "browserify index.js > browser.js"
+    "browser": "browserify client.js > sane-web-socket-client.js"
   }
 }

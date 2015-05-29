@@ -12,17 +12,25 @@ $ npm install --save sane-web-socket
 
 ## Usage
 
+### Server
 ```js
-var saneWebSocket = require('sane-web-socket');
-
-saneWebSocket('Rainbow');
+var SaneWebSocketServer = require('sane-web-socket/server');
 ```
+
+### Client
+
+Require and pass through any commonjs-browser bridge, such as [browserify](http://browserify.org/):
+ 
+```js
+var SaneWebSocketClient = require('sane-web-socket/client');
+```
+
+Or, create standalone browser bundle:
 
 ```sh
-# creates a browser.js
+# creates sane-web-socket-client.js
 $ npm run browser
 ```
-
 
 ## License
 
