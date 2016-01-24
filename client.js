@@ -8,8 +8,12 @@ function SaneWebSocketClient(address) {
   this.address = address;
 }
 
+SaneWebSocketClient.prototype.isConnected = function() {
+  return (this.hasOwnProperty('_socket') && this._socket.connected);
+};
+
 SaneWebSocketClient.prototype.getSocket = function() {
-  if (this.hasOwnProperty('socket') && this._socket.connected) {
+  if (this.isConnected()) {
     return Promise.resolve(this._socket);
   }
   if (this.connectingPromise) {
